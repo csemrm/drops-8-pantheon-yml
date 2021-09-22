@@ -21,9 +21,3 @@ protected_web_paths:
 # are disabled.
 protected_web_paths_override: false
 
-workflows:
-  deploy_product:
-    after:
-      - type: webphp
-        description: 'install Drupal'
-        script: private/scripts/deploy_product/drush_site_install.php
